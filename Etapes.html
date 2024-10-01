@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>Document</title>
+</head>
+    <body>
+		<style>
+            h3{
+                color: rgb(194, 54, 54);
+                text-align: end;
+                font-size: 35px;
+                
+            }
+			h5{
+				color: rgb(111, 109, 200);
+                text-align: end;
+                font-size: 20px;
+			}
+        
+            body{
+                background: linear-gradient(#534949, #000000);
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding: 25px 25px 20px 20px;
+                border-radius: 18px;
+                text-align: justify;
+                font-size: 18px;
+                color: rgb(208, 202, 193);
+                margin: 25px 25px 60px 60px;
+            }
+            .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background: linear-gradient(rgb(94, 33, 33),rgb(0, 0, 0)),
+                linear-gradient(rgb(0,0,0), rgb(85, 35, 35));
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+            }
+        
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #ffffff;
+                display: block;
+                transition: 0.3s;
+                text-align: left;
+            }
+            
+            .sidenav a:hover {
+                color: #e3b714;
+                font-weight: bold;
+            }
+            
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+            
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+            }
+
+            
+        </style>
+        
+        
+        
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="Fonctionnement.html">Fonctionnement</a>
+          <a href="Etapes.html">Etapes de fonctionnement</a>
+          <a href="Cibles.html">Les cibles et comment ne pas en devenir une</a>
+          <a href="LockBit HTML.html" style="font-size: 25px;color: rgb(36, 133, 175);">Accueil</a>
+
+        </div>
+        
+        
+        <span style="font-size:30px;cursor:pointer;color: rgb(111, 109, 200);" 
+        onclick="openNav()">&#9776; Menu</span>
+        
+        <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+		
+        <section>
+			<h3><ol>Etapes de fonctionnement</ol></h3>
+			<p>
+				Le processus d'attaque de LockBit se concentre autour de trois étapes 
+				principales : l'accès initial, le mouvement latéral et l'escalade des 
+				privilèges, et le déploiement de la charge utile du ransomware.
+
+				<ol><h5>Accès initial : La première brèche ressemble à celle des autres 
+				attaques malveillantes</h5></ol> Une entreprise peut être attaquée par des 
+				tactiques d'ingénierie sociale comme le phishing, au cours desquelles 
+				les cybercriminels se font passer pour du personnel ou des autorités 
+				légitimes dans le but de demander des identifiants de connexion. Le 
+				recours aux attaques par force brute sur les serveurs intranet et les 
+				systèmes réseau d'une entreprise est également viable. Sans configuration 
+				appropriée du réseau, les analyses préparatoires des attaques peuvent 
+				être terminées en quelques jours seulement. Une fois que le ransomware 
+				LockBit a analysé un réseau, il prépare le système à libérer sa charge 
+				utile de chiffrement sur tous les appareils possibles. Toutefois, un 
+				cybercriminel doit veiller à franchir quelques étapes supplémentaires 
+				avant de pouvoir passer à la phase finale.
+
+				<ol><h5>Mouvement latéral et élévation des privilèges : Infiltration 
+				plus profonde pour terminer la configuration de l'attaque si nécessaire</h5></ol>
+				À partir de là, le programme LockBit dirige toute activité de manière 
+				indépendante. Il est programmé pour utiliser ce que nous appelons les 
+				outils de « post-exploitation » pour obtenir des privilèges élevés et 
+				atteindre un niveau d'accès prêt à l'attaque. Il s'ancre également au 
+				moyen d'un accès déjà disponible via un mouvement latéral pour vérifier 
+				la viabilité de la cible. C'est à ce moment-là que LockBit entreprend des 
+				actions d'anticipation avant de déployer la partie chiffrement du 
+				ransomware. Celles-ci incluent la désactivation des programmes de 
+				sécurité et de toute autre infrastructure susceptible d'autoriser la 
+				récupération du système. L'objectif de l'infiltration consiste à 
+				invalider toute récupération sans assistance ou à ralentir suffisamment 
+				le système pour que l'acceptation de la rançon devienne la seule solution 
+				pratique. C'est lorsque la victime désespère de reprendre le cours normal 
+				de son activité qu'elle accepte de payer la rançon.
+
+				<ol><h5>Déploiement du payload de ransomware : Déploiement de la charge utile 
+				de chiffrement</h5></ol>Une fois que le réseau est préparé en vue d'une totale 
+				mobilisation par LockBit, le ransomware commence sa propagation sur toute 
+				machine à laquelle il accède. Comme indiqué précédemment, LockBit n'a 
+				guère besoin de beaucoup de ressources pour cette phase. Une unité 
+				système unique avec un accès élevé peut émettre des commandes sur d'autres 
+				unités réseau pour télécharger LockBit et l'exécuter. La partie 
+				chiffrement placera un « verrou » sur tous les fichiers système. Les 
+				victimes ne peuvent déverrouiller leurs systèmes qu'avec une clé 
+				personnalisée créée par l'outil de déchiffrement propriétaire de LockBit. 
+				Le processus laisse également des copies d'un simple fichier texte de note 
+				de rançon dans chaque dossier système. Ce fichier fournit à la victime des 
+				instructions pour restaurer le système et inclut parfois d'odieux 
+				chantages dans certaines versions de LockBit. Une fois les trois phases 
+				terminées, la victime prend le relais. Elle peut décider de contacter 
+				le centre de support LockBit et de payer la rançon. Toutefois, céder au 
+				chantage est vivement déconseillé. Les victimes n'ont pas la garantie 
+				que les cybercriminels respecteront leur part du marché.
+			</p>
+		</section>
+    </body>
+</html>

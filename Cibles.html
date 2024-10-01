@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>Document</title>
+</head>
+    <body>
+		<style>
+            h3{
+                color: rgb(194, 54, 54);
+                text-align: end;
+                font-size: 35px;
+                
+            }
+			h5{
+				color: rgb(66, 108, 43);
+                text-align: end;
+                font-size: 20px;
+			}
+        
+            body{
+                background: linear-gradient(#534949, #000000);
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding: 25px 25px 20px 20px;
+                border-radius: 18px;
+                text-align: justify;
+                font-size: 18px;
+                color: rgb(208, 202, 193);
+                margin: 25px 25px 60px 60px;
+            }
+            .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background: linear-gradient(rgb(94, 33, 33),rgb(0, 0, 0)),
+                linear-gradient(rgb(0,0,0), rgb(85, 35, 35));
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+            }
+        
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #ffffff;
+                display: block;
+                transition: 0.3s;
+                text-align: left;
+            }
+            
+            .sidenav a:hover {
+                color: #e3b714;
+                font-weight: bold;
+            }
+            
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+            
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+            }
+
+            
+        </style>
+        
+        
+        
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="Fonctionnement.html">Fonctionnement</a>
+          <a href="Etapes.html">Etapes de fonctionnement</a>
+          <a href="Cibles.html">Les cibles et comment ne pas en devenir une</a>
+          <a href="LockBit HTML.html" style="font-size: 25px;color: rgb(36, 133, 175);">Accueil</a>
+
+        </div>
+        
+        
+        <span style="font-size:30px;cursor:pointer;color: rgb(76, 127, 49);" 
+        onclick="openNav()">&#9776; Menu</span>
+        
+        <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+		
+        <section>
+			<h3><ol>Les cibles et comment ne pas en devenir une</ol></h3>
+			<p>
+				En règle générale, les hackers ciblent principalement des secteurs privés 
+				ou gouvernementaux qui possèdent suffisamment de fonds pour espérer payer 
+				la rançon. Par exemple, au cours des 10 dernières années, l'entreprise 
+				Thalès, Continental, Volkswagen ou encore Royal Mail ont subis des 
+				attaques. De même, des hôpitaux, des services de l'Etat ou encore de 
+				nombreux autres services publics ont été attaqués.<br><br>
+
+				Il est cependant à noter que certaines de leurs attaques ne sont pas toutes 
+				malveillantes : pour l'exemple de Thalès, le géant de la technologie, 
+				Lockbit ne demande pas de rançon mais affiche un décompte commençant le 
+				31 octobre 2022, et se terminant le 7 novembre 2022, date à laquelle les 
+				données seront publiées. Ils proposent leur assistance aux clients de 
+				Thales qui seraient impactés par ce vol, afin qu'ils puissent porter 
+				plainte contre Thales, un groupe « qui a grandement négligé les règles 
+				de confidentialité », ou encore le 18 décembre 2022, ils s'en prennent 
+				à l'hôpital pour enfants SikKids de Toronto. Après s'être aperçu de leur 
+				erreur, le groupe arrête l'attaque, s'excuse et propose gratuitement la 
+				solution pour récupérer les fichiers chiffrés.<br><br>
+
+				Ainsi, pour se protéger de ces attaques et éviter de risquer de perdre 
+				l'intégralité de ses données, quelques conseils sont à retenir :<br><br> 
+				
+				<ol><h5><u>Implémentez des mots de passe forts</u></h5></ol> 
+				
+				De nombreuses violations de comptes surviennent en raison de mots de passe faciles à deviner ou trop simples à 
+				découvrir pour un algorithme après quelques jours d'analyse. Choisissez 
+				un mot de passe sécurisé, long, comportant différents caractères et 
+				utilisant des règles personnelles pour créer des phrases de chiffrement.
+				
+				<ol><h5><u>Activez l'authentification multi-facteur</u></h5></ol> 
+
+				Prévenez les attaques par force brute en ajoutant des niveaux à vos identifiants initiaux basés sur des 
+				mots de passe. Dans la mesure du possible, incluez des mesures comme la 
+				biométrique ou les authentificateurs via des clés USB physiques sur 
+				l'ensemble de vos systèmes.
+
+				<ol><h5><u>Réévaluez et simplifiez les autorisations de comptes utilisateurs</u></h5></ol> 
+				
+				Limitez les autorisations à des niveaux plus stricts pour réduire le nombre de 
+				menaces potentielles. Prêtez particulièrement attention aux éléments 
+				accessibles par les utilisateurs de terminaux et les comptes informatiques 
+				avec des autorisations de niveau administrateur. Les domaines Web, 
+				les plateformes collaboratives, les services de réunion Web et les bases 
+				de données d'entreprise doivent être sécurisés.
+
+				<ol><h5><u>Supprimez les comptes utilisateurs obsolètes et inutilisés</u></h5></ol>
+				
+				Certains anciens systèmes contiennent parfois des comptes de salariés 
+				qui ont quitté l'entreprise, qui n'ont jamais été désactivés ni fermés. 
+				Assurez-vous que vos systèmes incluent l'élimination de ces failles 
+				potentielles.
+
+				<ol><h5><u>Assurez-vous que les configurations système sont conformes à toutes les 
+				procédures de sécurité</u></h5></ol> 
+				
+				Cela peut prendre du temps, mais la vérification des configurations existantes peut permettre d'identifier de nouveaux 
+				problèmes et des politiques obsolètes qui exposent votre entreprise à un 
+				risque d'attaque. Les procédures opérationnelles standard doivent être 
+				réévaluées régulièrement pour faire face aux nouvelles cybermenaces.
+
+				<ol><h5><u>Disposez toujours de sauvegardes de l'ensemble du système et d'images 
+				machine locales propres déjà prêtes</u></h5></ol> 
+				
+				Des incidents se produiront et la copie hors ligne constituera l'unique véritable protection contre la 
+				perte définitive des données. Votre entreprise doit régulièrement créer 
+				des sauvegardes, à actualiser en cas de modifications majeures apportées 
+				à vos systèmes. Si une sauvegarde est corrompue par un programme 
+				malveillant, pensez à disposer de plusieurs points de sauvegarde de 
+				rotation pour pouvoir sélectionner une période propre.<br><br>
+
+				Mais ce ne sont que des méthodes de prévention parmi d'autres et plus 
+				vous en appliquerez, mieux ce sera.  
+			</p>
+		</section>
+    </body>
+</html>
